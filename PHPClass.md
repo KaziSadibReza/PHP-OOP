@@ -2,13 +2,13 @@
 
 Class ClassName{
 
-  // Properties
-  public $name;
+    // Properties
+    public $name;
+    
+    // Methods 
+    function Name(){
   
-  // Methods 
-  function Name(){
-
-  }
+    }
 
 }
 
