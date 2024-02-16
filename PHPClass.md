@@ -1,17 +1,27 @@
 # কিভাবে আমরা ক্লাস লিখবো ?
 
+** PHP তে অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং লেখার জন্য 'Class' KeyWord ব্যবহার করতে হয় .
+
+* ক্লাসের (Class) ভিতর {
+
+    ভেরিয়েবল ($name) কে বলে প্রপার্টি (Properties) ;
+    
+    ফাংশন (function) কে বলে মেথড (Methods);
+
+  }
+
 # Example Class
         <?php
         
         class Fruit
         {
         
-            //properties
+            //Properties
             
             public $name;
             public $color;
             
-            "//Methods"
+            //Methods
             
             public function set_name($name)
             {
@@ -49,6 +59,7 @@
         $banana->set_name('Banana');
 
         // Print all assign value 
+        
         echo $apple->get_name();
         echo "<br>";
         echo $banana->get_name();
@@ -59,11 +70,21 @@
         echo "<br>";
         ?>
 
+# new KeyWord দিয়ে কি করা হয় ?
 
-* ক্লাসের (Class) ভিতর {
+** new কিওয়ার্ড টা বোঝার আগে আমাদের বুঝতে হবে অবজেক্ট কি ?
+-> Class Object ছাড়া অচল! আমরা একটি ক্লাস থেকে একাধিক অবজেক্ট তৈরি করতে পারি। প্রত্যেকটি অবজেক্ট এর ভেতর Class এ 
+বিদ্যমান Methods এবং Properties এর সকল বৈশিষ্ট্য রয়েছে।
 
-    ভেরিয়েবল ($name) কে বলে প্রপার্টি (Properties) ;
-    
-    ফাংশন (function) কে বলে মেথড (Methods);
+        // Object make
+        
+        $apple = new Fruit();
+        $banana = new Fruit();
+        
+* এখানে new KeyWord দিয়ে নতুন একটি অবজেক্ট তৈরি করা হয়েছে।
 
-  }
+# $this OR '->' দিয়ে কি করা হয় ?
+        
+# এখানে ব্যবহারকৃত KeyWords
+*new
+*class
