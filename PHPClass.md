@@ -6,12 +6,12 @@
         class Fruit
         {
         
-#            //properties
+            //properties
             
             public $name;
             public $color;
             
-#            //Methods
+            **//Methods**
             
             public function set_name($name)
             {
@@ -35,12 +35,12 @@
         
         }
         
-#        // Object make
+        // Object make
         
         $apple = new Fruit();
         $banana = new Fruit();
         
-#        // Assign a value in Methods
+        // Assign a value in Methods
 
         $apple->set_color('Reza');
         $banana->set_color('Prince');
@@ -48,7 +48,7 @@
         $apple->set_name('Apple');
         $banana->set_name('Banana');
 
-#        // Print all assign value 
+        // Print all assign value 
         echo $apple->get_name();
         echo "<br>";
         echo $banana->get_name();
