@@ -11,7 +11,7 @@
             public $name;
             public $color;
             
-            **//Methods**
+            "//Methods"
             
             public function set_name($name)
             {
